@@ -26,7 +26,11 @@ fig = pylab.figure()
 ax = fig.add_subplot(111, projection = '3d')
 
 sc = ax.scatter(x,y,z)
-# now try to get the display coordinates of the first point
+
+ax.set_xlabel("X")
+ax.set_ylabel("Y")
+ax.set_zlabel("Z")
+
 
 x2s = range(len(x))
 y2s = range(len(x))
